@@ -189,14 +189,92 @@ else:
 # else:
 #     print("Fail")
 """
-per = 90
-result = (
-    "A"
-    if per >= 90
-    else (
-        "B"
-        if per >= 80
-        else "C" if per >= 70 else "D" if per >= 60 else "E" if per >= 50 else "Fail"
-    )
-)
-print(result)
+# per = 90
+# result = (
+#     "A"
+#     if per >= 90
+#     else (
+#         "B"
+#         if per >= 80
+#         else "C" if per >= 70 else "D" if per >= 60 else "E" if per >= 50 else "Fail"
+#     )
+# )
+# print(result)
+
+"""
+ch = input("Enter a character : ")
+
+if (ch >= "A" and ch <= "Z") or (ch >= "a" and ch <= "z"):
+    print("Alphabet")
+elif ch >= "0" and ch <= "9":
+    print("Digit") or 
+else:
+    print("special symbol")
+
+"""
+
+# ch = input("Enter a character : ")
+
+"""
+if (
+    ch == "A"
+    or ch == "a"
+    or ch == "E"
+    or ch == "e"
+    or ch == "I"
+    or ch == "i"
+    or ch == "O"
+    or ch == "u"
+    or ch == "U"
+    or ch == "u"
+):
+    print("Vowel")
+elif (ch >= "A" and ch <= "Z") or (ch >= "a" and ch <= "z"):
+    print("Consonent")
+elif ch >= "0" and ch <= "9":
+    print("Digit")
+else:
+    print("special symbol")
+
+"""
+"""
+if ch in "AEIOUaeiou":
+    print("Vowel")
+elif (ch >= "A" and ch <= "Z") or (ch >= "a" and ch <= "z"):
+    print("Consonent")
+elif ch >= "0" and ch <= "9":
+    print("Digit")
+else:
+    print("special symbol")
+
+"""
+
+"""
+x = ord("A")
+print(x)
+x = ord("*")
+print(x)
+x = ord("😊")
+print(x)
+# x = ord("Hello")
+# print(x)
+
+y = chr(97)
+print(y)
+y = chr(128522)
+print(y)
+
+"""
+
+"""
+ch = input("Enter a character : ")
+# A -> a
+# a -> A
+
+if ch >= "A" and ch <= "Z":
+    ch = chr(ord(ch) + 32)
+elif ch >= "a" and ch <= "z":
+    ch = chr(ord(ch) - 32)
+print(ch)
+
+"""
