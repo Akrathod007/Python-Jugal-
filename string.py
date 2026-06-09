@@ -221,18 +221,71 @@ print(s.zfill(5))
 
 """
 
-name = "Ram"
-age = 21
+# name = "Ram"
+# age = 21
 
-print("Name is", name, "and age is", age)
-print("Name is {} and age is {}".format(name, age))
-print("Name is {} and age is {}".format(age, name))
-print("Name is {name} and age is {age}".format_map({"name": "Ram", "age": 21}))
-print("Name is {name} and age is {age}".format_map({"name": name, "age": age}))
+# print("Name is", name, "and age is", age)
+# print("Name is {} and age is {}".format(name, age))
+# print("Name is {} and age is {}".format(age, name))
+# print("Name is {name} and age is {age}".format_map({"name": "Ram", "age": 21}))
+# print("Name is {name} and age is {age}".format_map({"name": name, "age": age}))
+
+# s2 = "Mississippi"
+# print(len(s2))
+
+# print(f"Name is {name} and age is {age}")
+# print("My name is %s and I am %d years old." % (name, age))
+# print("My name is %s and I am %d years old." % (age, name))
 
 s2 = "Mississippi"
-print(len(s2))
 
-print(f"Name is {name} and age is {age}")
-print("My name is %s and I am %d years old." % (name, age))
-print("My name is %s and I am %d years old." % (age, name))
+# Using Indexing :
+for i in range(0, len(s2)):
+    print(i, "->", s2[i])
+
+# direct character access :
+
+for i in s2:
+    print(i)
+
+"""
+1. Count Characters
+Input a string and count the total number of characters.
+
+2. Count Vowels and Consonants
+Find the number of vowels and consonants in a string.
+
+3. Reverse a String
+Reverse a given string without using slicing ([::-1]).
+
+4. Check Palindrome
+Check whether a string is a palindrome or not.
+
+5. Count Words
+Count the number of words in a sentence.
+
+6. Convert Case
+Convert all lowercase letters to uppercase and vice versa.
+
+7. Remove Spaces
+Remove all spaces from a string.
+ex : i am python developer
+output : iampythondeveloper
+
+8. Find Frequency of a Character
+Count how many times a given character appears in a string.
+s2 = "Mississippi"
+ch = i
+
+9. Replace a Word
+Replace all occurrences of a word with another word.
+s2 = "Mississippi"
+o = 'i'
+n = 'o'
+
+10. Find Longest Word
+Find the longest word in a sentence.
+
+ex : i am python developer
+
+"""
