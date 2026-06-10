@@ -240,13 +240,13 @@ print(s.zfill(5))
 s2 = "Mississippi"
 
 # Using Indexing :
-for i in range(0, len(s2)):
-    print(i, "->", s2[i])
+# for i in range(0, len(s2)):
+#     print(i, "->", s2[i])
 
-# direct character access :
+# # direct character access :
 
-for i in s2:
-    print(i)
+# for i in s2:
+#     print(i)
 
 """
 1. Count Characters
@@ -289,3 +289,112 @@ Find the longest word in a sentence.
 ex : i am python developer
 
 """
+
+
+"""
+3. Reverse a String
+Reverse a given string without using slicing ([::-1]).
+
+ex = Doremon
+nomeroD
+
+D   o   r   e   m   o   n
+0   1   2   3   4   5   6
+"""
+
+# s = input("Enter a name : ")
+# rev = ""
+# for i in range(len(s) - 1, -1, -1):
+#     rev = rev + s[i]
+#     """
+#     rev = "" + n -> n
+#     rev = n + o -> no
+#     """
+
+
+# print("Reverse :", rev)
+
+# if s == rev:
+#     print("Palindrome String")
+# else:
+#     print("Not Palindrome String")
+
+
+"""
+7. Remove Spaces
+Remove all spaces from a string.
+ex : i am python developer
+output : iampythondeveloper
+"""
+
+# s = input("Enter a string : ")
+# output = ""
+
+# for i in s:
+#     if i != " ":
+#         output += i
+
+# print("Output :", output)
+# print("Replace :", s.replace(" ", ""))
+
+
+"""
+Find Frequency of a Character
+Count how many times a given character appears in a string.
+s2 = "Mississippi"
+ch = i
+"""
+
+# s = input("Enter a string : ")
+# ch = input("Enter a character you want to count : ")
+# cc = 0
+# for i in s:
+#     if i == ch:
+#         cc += 1
+
+# print(f"{ch} occurs {cc} times")
+
+
+"""
+9. Replace a Word
+Replace all occurrences of a word with another word.
+s2 = "Mississippi"
+o = 'i'
+n = 'o'
+"""
+
+# s = input("Enter a string : ")
+# old = input("Enter Repalce character or word: ")
+# new = input("Enter new character or word : ")
+
+# new_s = ""
+
+# for i in s:
+#     if i == old:
+#         new_s += new
+#     else:
+#         new_s += i
+
+# print("Old String :", s)
+# print("New String :", new_s)
+
+
+"""
+10. Find Longest Word
+Find the longest word in a sentence.
+
+ex : i am python developer
+"""
+
+s = input("Enter a string : ")
+li = s.split()
+
+print(li)
+
+longest = li[0]
+
+for i in li:
+    if len(i) > len(longest):
+        longest = i
+
+print("Longest :", longest)
