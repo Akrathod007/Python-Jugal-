@@ -145,3 +145,154 @@ for i in d5:
     print("Sum :", sum)
 
 print("Final Score :", final_Score)
+
+"""
+1. Count Frequency of Characters
+word = "python"
+
+freq = {
+    "p":1
+}
+
+2. Count Frequency of Words
+sentence = "python is easy python is powerful"
+
+3. Create Dictionary of Number and Cube
+data = {}
+
+data = {
+    1:1,
+    2:8,
+    3:27
+}
+
+4. Swap Keys and Values
+data = {"a": 1,"b": 2, "c": 3}
+
+5. Find Duplicate Values
+data = {
+    "a": 10,
+    "b": 20,
+    "c": 10,
+    "d": 30
+}
+
+6. Create Dictionary From String Length
+words = ["python", "java", "ai"]
+
+data = {
+    "Python":6
+}
+
+7. Count Vowels in Sentence
+sentence = "python programming"
+
+8. Create Dictionary of Factorials
+data = {
+    1:1,
+    2:2,
+    3:6,
+    4:24,
+    5:120
+}
+
+9. Group Numbers by Positive and Negative
+numbers = [10, -5, 7, -2, 0]
+
+data = {
+    "positive": [],
+    "negative": [],
+    "zero": []
+}
+
+10. Separate Even and Odd Numbers
+numbers = [1, 2, 3, 4, 5, 6]
+
+data = {
+    "even": [],
+    "odd": []
+}
+
+"""
+
+
+# 1. Count Frequency of Characters
+# word = "madam"
+
+# d = {}
+
+# for i in word:
+#     d[i] = d.get(i, 0) + 1
+
+# print(d)
+
+
+"""
+2. Count Frequency of Words
+sentence = "python is easy python is powerful"
+"""
+# sentence = "python is easy python is powerful"
+# li = sentence.split()
+
+# d = {}
+
+# for i in li:
+#     d[i] = d.get(i, 0) + 1
+
+# print(d)
+
+
+# 3. Create Dictionary of Number and Cube
+# data = {}
+
+# for i in range(1, 11):
+#     data[i] = i**3
+
+# print(data)
+
+
+"""
+4. Swap Keys and Values
+data = {"a": 1,"b": 2, "c": 3}
+"""
+# data = {"a": 1, "b": 2, "c": 3}
+# d = {}
+# for k, v in data.items():
+#     d[v] = k
+
+# print(d)
+
+
+"""
+5. Find Duplicate Values
+data = {
+    "a": 10,
+    "b": 20,
+    "c": 10,
+    "d": 30
+}
+"""
+# data = {"a": 10, "b": 20, "c": 10, "d": 20}
+# duplicate = []
+
+# values = list(data.values())
+
+# for i in values:
+#     if values.count(i) > 1 and i not in duplicate:
+#         duplicate.append(i)
+
+
+# print(duplicate)
+
+
+"""
+6. Create Dictionary From String Length
+words = ["python", "java", "ai"]
+"""
+# words = ["python", "java", "ai"]
+
+# d = {}
+# for word in words:
+#     d[word] = len(word)
+
+# print(d)
