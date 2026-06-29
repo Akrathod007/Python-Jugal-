@@ -129,19 +129,148 @@ def prime(n):
 #     prime2(i)
 
 
-def add(a, b=40, c=30):
-    print(f"{a} + {b} + {c} = {a+b+c}")
+# def add(a, b=40, c=30):
+#     print(f"{a} + {b} + {c} = {a+b+c}")
 
 
-add(10, 20)
-add(10)
-add(10, 20, 30)
+# add(10, 20)
+# add(10)
+# add(10, 20, 30)
 
 
-def mul(a=10, b=20, c=30):
-    print(f"{a} * {b} * {c} = {a*b*c}")
+# def mul(a=10, b=20, c=30):
+#     print(f"{a} * {b} * {c} = {a*b*c}")
 
 
-mul(10, 20, 30)
-mul(30, 40, 50)
-mul(b=5, c=10, a=20)
+# mul(10, 20, 30)
+# mul(30, 40, 50)
+# mul(b=5, c=10, a=20)
+
+
+# def printChar(s):
+#     for i in s:
+#         print(i)
+
+
+# printChar("Doremon")
+
+
+# def reverseStr(s):
+#     return s[::-1]
+
+
+# print(reverseStr("Doremon"))
+
+
+# def printList(l):
+#     for i in l:
+#         print(i)
+
+
+# li = [1, 2, 3, 4, 5]
+# printList(li)
+# printList([1, 2, 3, 4, 5])
+
+
+# def squareList(l):
+#     sl = []
+#     for i in l:
+#         sl.append(i * i)
+
+#     return sl
+
+
+# x = squareList([1, 2, 3, 4, 5])
+# print(x)
+
+
+# def Math(a, b):
+#     return a + b, a - b, a * b, a / b
+
+
+# x = Math(20, 10)
+# print(x)
+# print(type(x))
+
+# add, sub, mul, div = x
+# print(add)
+# print(sub)
+# print(mul)
+# print(div)
+
+
+# def demo(a, b, *args):
+#     print(a)
+#     print(b)
+#     print(args)
+
+#     total = a + b + sum(args)
+
+#     return total
+
+
+# demo(10, 20)
+# demo(10, 20, 30, 40, 50)
+
+# print(demo(10, 20, 30, 40))
+
+
+# def printLi(*args):
+#     print(args)
+
+
+# printLi(*[1, 2, 3, 4, 5])
+# li = [1, 2, 3, 4, 5]
+
+# printLi(*li)
+
+
+# def demo(a, b, *args, **kargs):
+#     print(a)
+#     print(b)
+#     print(args)
+#     print(kargs)
+
+
+# demo(10, 20, 30, 40, 50, name="Ram", age=21)
+
+
+person = {"Name": "Ram", "Age": 21, "City": "Ahm"}
+
+
+# def printDict(**kargs):
+#     print(kargs)
+
+
+# printDict(**person)
+
+# y = 200
+# z = 200
+
+
+# def Demo():
+#     x = 10
+#     global y, z
+#     y += 200  # y = y + 200
+#     z = z + 100
+#     print(x)
+#     print(y)
+#     print(z)
+
+
+# Demo()
+# # print(x)    #Error
+
+# print(y)
+
+
+x = 2000
+
+
+def demo():
+    x = 100
+    print(x)
+
+
+demo()
+print(x)
