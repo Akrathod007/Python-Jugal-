@@ -264,13 +264,60 @@ person = {"Name": "Ram", "Age": 21, "City": "Ahm"}
 # print(y)
 
 
-x = 2000
+# x = 2000
 
 
-def demo():
-    x = 100
-    print(x)
+# def demo():
+#     x = 100
+#     print(x)
 
 
-demo()
-print(x)
+# demo()
+# print(x)
+
+
+def greet():
+    print("Hello")
+
+
+x = greet  # No ()
+x()
+
+
+def greet():
+    print("Hello")
+
+
+def call_func(func):
+    func()
+
+
+call_func(greet)
+# call_func(10)
+
+
+def outer():
+    def inner():
+        print("Inner function")
+
+    # inner()
+    return inner
+
+
+f = outer
+# f()
+print(f()())
+
+
+def add(a, b):
+    return a + b
+
+
+def sub(a, b):
+    return a - b
+
+
+ops = [add, sub]
+
+print(ops[0](10, 5))
+print(ops[1](10, 5))
