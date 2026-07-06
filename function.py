@@ -276,48 +276,68 @@ person = {"Name": "Ram", "Age": 21, "City": "Ahm"}
 # print(x)
 
 
-def greet():
-    print("Hello")
+# def greet():
+#     print("Hello")
 
 
-x = greet  # No ()
-x()
+# x = greet  # No ()
+# x()
 
 
-def greet():
-    print("Hello")
+# def greet():
+#     print("Hello")
 
 
-def call_func(func):
-    func()
+# def call_func(func):
+#     func()
 
 
-call_func(greet)
-# call_func(10)
+# call_func(greet)
+# # call_func(10)
+
+
+# def outer():
+#     def inner():
+#         print("Inner function")
+
+#     # inner()
+#     return inner
+
+
+# f = outer
+# # f()
+# print(f()())
+
+
+# def add(a, b):
+#     return a + b
+
+
+# def sub(a, b):
+#     return a - b
+
+
+# ops = [add, sub]
+
+# print(ops[0](10, 5))
+# print(ops[1](10, 5))
 
 
 def outer():
+    print("Outer Function")
+    x = 10
+
     def inner():
-        print("Inner function")
+        y = 20
+        nonlocal x
+        x = x + 10
+        print("Inner Function")
+        print(x)
+        print(y)
 
-    # inner()
-    return inner
-
-
-f = outer
-# f()
-print(f()())
-
-
-def add(a, b):
-    return a + b
+    # print(y)
+    inner()
 
 
-def sub(a, b):
-    return a - b
-
-
-ops = [add, sub]
-
-print(ops[0](10, 5))
-print(ops[1](10, 5))
+outer()
+# print(x)
