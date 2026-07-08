@@ -77,3 +77,10 @@ print(result)
 students = [("Raj", 80), ("Amit", 60), ("Kiran", 90)]
 
 print(sorted(students, key=lambda x: x[1]))
+
+
+# Sort Strings by Number of Vowels
+words = ["education", "apple", "python", "india", "computer"]
+
+s = sorted(words, key=lambda word: sum(1 for ch in word.lower() if ch in "aeiou"))
+print(s)
