@@ -58,8 +58,8 @@ def demo(x):
 # result = list(map(demo, li))
 # print(result)
 
-r = list(map(lambda n: "Even" if n % 2 == 0 else "Odd", li))
-print(r)
+# r = list(map(lambda n: "Even" if n % 2 == 0 else "Odd", li))
+# print(r)
 
 
 """
@@ -83,26 +83,26 @@ Create a list of integers and use map() to check whether each number is even or 
 """
 
 
-li = [1, 2, 3, 4, 5, 6, 7, 8]
+# li = [1, 2, 3, 4, 5, 6, 7, 8]
 
-r = list(filter(lambda x: x % 2 == 0, li))
-print(r)
+# r = list(filter(lambda x: x % 2 == 0, li))
+# print(r)
 
 
-evenOdd = [
-    list(filter(lambda x: x % 2 == 0, li)),
-    list(filter(lambda x: x % 2 != 0, li)),
-]
-print(evenOdd)
+# evenOdd = [
+#     list(filter(lambda x: x % 2 == 0, li)),
+#     list(filter(lambda x: x % 2 != 0, li)),
+# ]
+# print(evenOdd)
 
 from functools import reduce
 
-nums = [1, 2, 3, 4, 5]
+# nums = [1, 2, 3, 4, 5]
 
-s = reduce(lambda a, b: a + b, nums)
-# s = reduce(lambda a, b: a + b, nums, 10)
-m = reduce(lambda a, b: a if a > b else b, nums)
-print(m)
+# s = reduce(lambda a, b: a + b, nums)
+# # s = reduce(lambda a, b: a + b, nums, 10)
+# m = reduce(lambda a, b: a if a > b else b, nums)
+# print(m)
 """
 a = 1,b= 2
 a + b -> 3
@@ -119,7 +119,7 @@ b -> 5
 a + b -> 15
 """
 
-print(s)
+# print(s)
 
 
 """
@@ -201,9 +201,14 @@ li = [1, 2, 3, 4, 5, 6]
 # s = reduce(lambda a, b: a + b, square)
 # print(s)
 
-s = reduce(
-    lambda a, b: a + b,
-    list(map(lambda x: x * x, list(filter(lambda x: x % 2 == 0, li)))),
-)
+# s = reduce(
+#     lambda a, b: a + b,
+#     list(map(lambda x: x * x, list(filter(lambda x: x % 2 == 0, li)))),
+# )
 
-print(s)
+# print(s)
+# 3. Find Total Digits in List
+numbers = [123, 45, 6789]
+
+t = reduce(lambda a, b: a + len(str(b)), numbers, 0)
+print(t)
