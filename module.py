@@ -74,23 +74,23 @@ import math as m
 # print(r.randrange(1, 11, 4))
 
 
-colors = ["red", "green", "blue", "yellow"]
-print(colors)
-print(r.choice(colors))
+# colors = ["red", "green", "blue", "yellow"]
+# print(colors)
+# print(r.choice(colors))
 
-name = "Doremon"
-print(r.choice(name))
+# name = "Doremon"
+# print(r.choice(name))
 
-print(r.choices(colors, k=5))
-# print(r.sample(colors, k=3))
-# print(r.sample(colors, k=5))
+# print(r.choices(colors, k=5))
+# # print(r.sample(colors, k=3))
+# # print(r.sample(colors, k=5))
 
 
-nums = [1, 2, 3, 4, 5, 6, 7]
-r.shuffle(nums)
-print(nums)
+# nums = [1, 2, 3, 4, 5, 6, 7]
+# r.shuffle(nums)
+# print(nums)
 
-print(r.uniform(1.1, 5.5))
+# print(r.uniform(1.1, 5.5))
 
 
 """
@@ -135,3 +135,19 @@ else
     com win
 
 """
+
+
+import string
+
+print(string.ascii_letters)
+print(string.ascii_lowercase)
+print(string.ascii_uppercase)
+print(string.digits)
+print(string.hexdigits)
+print(string.octdigits)
+print(string.punctuation)
+print(string.whitespace)
+
+
+# Count digits in a string :
+# Count alphabets in a string :
