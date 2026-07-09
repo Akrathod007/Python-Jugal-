@@ -131,6 +131,7 @@ if com == user:
 
 if (user == "R" and com == "S") or (user == "P" and com == "R") or (user == "S" and com == "p"):
     user win
-
+else
+    com win
 
 """
