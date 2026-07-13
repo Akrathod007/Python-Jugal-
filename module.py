@@ -137,17 +137,105 @@ else
 """
 
 
-import string
+# import string
 
-print(string.ascii_letters)
-print(string.ascii_lowercase)
-print(string.ascii_uppercase)
-print(string.digits)
-print(string.hexdigits)
-print(string.octdigits)
-print(string.punctuation)
-print(string.whitespace)
+# print(string.ascii_letters)
+# print(string.ascii_lowercase)
+# print(string.ascii_uppercase)
+# print(string.digits)
+# print(string.hexdigits)
+# print(string.octdigits)
+# print(string.punctuation)
+# print(string.whitespace)
 
 
 # Count digits in a string :
 # Count alphabets in a string :
+
+import datetime as dt
+
+today = dt.date.today()
+print(dt.date.today())
+t = dt.datetime.now()
+print(dt.datetime.now())
+
+d = dt.date(2025, 1, 1)
+print(d)
+
+d_t = dt.datetime(2025, 12, 1, 15, 30, 45)
+print(d_t)
+
+print("Year :", today.year)
+print("Month :", today.month)
+print("Day :", today.day)
+print("Hour :", t.hour)
+print("Minute :", t.minute)
+print("Second :", t.second)
+print("MicroSecond :", t.microsecond)
+
+print(t.strftime("%d-%m-%Y"))
+print(t.strftime("%d-%m-%y"))
+print(t.strftime("%A"))
+print(t.strftime("%a"))
+print(t.strftime("%B"))
+print(t.strftime("%b"))
+print(t.strftime("%H$%p"))
+print(t.strftime("%I %p"))
+print(t.strftime("%H:%M:%S.%f"))
+print(t.strftime("%j"))
+print(t.strftime("%U"))
+print(t.strftime("%W"))
+print(t.strftime("%c"))
+print(t.strftime("%x"))
+print(t.strftime("%X"))
+
+
+today = dt.date.today()
+new_date = today + dt.timedelta(days=5)
+
+print(new_date)
+
+d1 = dt.date(2026, 2, 8)
+d2 = dt.date(2026, 2, 1)
+
+diff = d1 - d2
+print(diff)
+print(diff.days)
+
+time_now = dt.datetime.now().time()
+print(time_now)
+
+date_string = "08-02-2026"
+date_obj = dt.datetime.strptime(date_string, "%d-%m-%Y")
+
+print(date_obj)
+
+
+print("---------------------------------------------------")
+
+today = dt.date.today()
+print(today)
+new_year = dt.date(2027, 1, 1)
+print(new_year)
+
+diff = new_year - today
+print(diff.days)
+
+import datetime
+
+today = datetime.date.today()
+next_year = today.year + 1
+
+new_year = datetime.date(next_year, 1, 1)
+days_left = (new_year - today).days
+
+print("Days left for New Year:", days_left)
+
+
+x1 = 10
+y1 = 20
+x2 = 5
+y2 = 10
+
+if (x1, y1) > (x2, y2):
+    print("Hello")
